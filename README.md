@@ -1,4 +1,3 @@
-An absolute bare-bones web app.
+# Axis
 
-Created from templates made available by Stagehand under a BSD-style
-[license](https://github.com/dart-lang/stagehand/blob/master/LICENSE).
+Alleviates the task of rendering human-readable axis using scales.

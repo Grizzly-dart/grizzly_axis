@@ -1,7 +1,7 @@
 name: axis
-description: An absolute bare-bones web app.
+description: Alleviates the task of rendering human-readable axis using scales.
 version: 2.0.1
-homepage: https://github.com/Grizzly-dart/vizdom_select
+homepage: https://github.com/Grizzly-dart/grizzly_axis
 author: Ravi Teja Gudapati <tejainece@gmail.com>
 
 environment:
