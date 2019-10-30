@@ -1,7 +1,7 @@
 import 'dart:html';
 import 'dart:svg';
 
-import 'package:axis/grizzly_axis.dart';
+import 'package:grizzly_axis/grizzly_axis.dart';
 import 'package:grizzly_scales/grizzly_scales.dart';
 import 'package:vizdom_select/selection/selection.dart';
 

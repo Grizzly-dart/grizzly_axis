@@ -1,4 +1,4 @@
-name: axis
+name: grizzly_axis
 description: Alleviates the task of rendering human-readable axis using scales.
 version: 2.0.1
 homepage: https://github.com/Grizzly-dart/grizzly_axis
@@ -8,23 +8,20 @@ environment:
   sdk: '>=2.5.0 <3.0.0'
 
 dependencies:
-  vizdom_select:
-    path: ../vizdom_select
-  grizzly_scales:
-    path: ../scales
-  svg_path_builder:
-    path: ../svg_path_builder
+  vizdom_select: ^2.0.2
+  grizzly_scales: ^2.0.2
+  svg_path_builder: ^1.0.0
 
 dev_dependencies:
   build_runner: ^1.6.0
   build_web_compilers: ^2.3.0
   pedantic: ^1.8.0
-  grizzly_range:
+  grizzly_range: ^2.0.6
   grizzly_io: ^2.1.0
   grizzly_stat: ^2.0.1
 
-dependency_overrides:
-  grizzly_range:
-    path: ../range
-  grizzly_io:
-    path: ../io
+#dependency_overrides:
+#  grizzly_range:
+#    path: ../range
+#  grizzly_io:
+#    path: ../io
