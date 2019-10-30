@@ -17,9 +17,9 @@ void axisBottom(
     ..select('.axis', init: SvgElement.tag('line'), doo: (axisSel) {
       final SvgElement el = axisSel.element;
       el
-        ..setAttribute('x1', '0')
+        ..setAttribute('x1', scale.range.first.toString())
         ..setAttribute('y1', '0')
-        ..setAttribute('x2', scale.scale(ticks.last).toString())
+        ..setAttribute('x2', scale.range.last.toString())
         ..setAttribute('y2', '0')
         ..setAttribute('stroke', axisColor);
     });
@@ -41,15 +41,17 @@ void axisBottom(
         ..setAttribute('x', '0')
         ..setAttribute('y', '10')
         ..setAttribute("dominant-baseline", "text-before-edge")
+        ..setAttribute("text-anchor", "middle")
         ..setAttribute('color', tickColor)
         ..setAttribute('font-size', '12px');
+      /*
       if (ref.dataIndex == 0) {
         tickTextEl.setAttribute("text-anchor", "start");
       } else if (ref.dataIndex == ref.allData.length - 1) {
         tickTextEl.setAttribute("text-anchor", "end");
       } else {
         tickTextEl.setAttribute("text-anchor", "middle");
-      }
+      }*/
       el.children.add(tickTextEl);
     });
 }
@@ -69,9 +71,9 @@ void axisLeft(
       final SvgElement el = axisSel.element;
       el
         ..setAttribute('x1', '0')
-        ..setAttribute('y1', '0')
+        ..setAttribute('y1', scale.range.first.toString())
         ..setAttribute('x2', '0')
-        ..setAttribute('y2', scale.scale(ticks.last).toString())
+        ..setAttribute('y2', scale.range.last.toString())
         ..setAttribute('stroke', axisColor);
     });
 
@@ -92,15 +94,17 @@ void axisLeft(
         ..setAttribute('x', '-10')
         ..setAttribute('y', '0')
         ..setAttribute("text-anchor", "end")
+        ..setAttribute("dominant-baseline", "central")
         ..setAttribute('color', tickColor)
         ..setAttribute('font-size', '12px');
+      /*
       if (ref.dataIndex == 0) {
         tickTextEl.setAttribute("dominant-baseline", "text-before-edge");
       } else if (ref.dataIndex == ref.allData.length - 1) {
         tickTextEl.setAttribute("dominant-baseline", "text-after-edge");
       } else {
         tickTextEl.setAttribute("dominant-baseline", "central");
-      }
+      }*/
       el.children.add(tickTextEl);
     });
 }

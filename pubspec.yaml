@@ -1,8 +1,8 @@
 name: axis
 description: An absolute bare-bones web app.
-# version: 1.0.0
-#homepage: https://www.example.com
-#author: teja <tejainece@gmail.com>
+version: 2.0.1
+homepage: https://github.com/Grizzly-dart/vizdom_select
+author: Ravi Teja Gudapati <tejainece@gmail.com>
 
 environment:
   sdk: '>=2.5.0 <3.0.0'
@@ -20,7 +20,11 @@ dev_dependencies:
   build_web_compilers: ^2.3.0
   pedantic: ^1.8.0
   grizzly_range:
+  grizzly_io: ^2.1.0
+  grizzly_stat: ^2.0.1
 
 dependency_overrides:
   grizzly_range:
     path: ../range
+  grizzly_io:
+    path: ../io
