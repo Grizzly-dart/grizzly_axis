@@ -20,7 +20,9 @@ dev_dependencies:
   grizzly_io: ^2.1.0
   grizzly_stat: ^2.0.1
 
-#dependency_overrides:
+dependency_overrides:
+  vizdom_select:
+    path: ../select
 #  grizzly_range:
 #    path: ../range
 #  grizzly_io:
